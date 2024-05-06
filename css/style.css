@@ -1,0 +1,231 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+/* ************ CSS BOILER PLATE */
+
+/* STYLE THEME */
+
+/* ## Colors */
+
+/* ### Primary */
+
+/* - Linear gradient (active input border): hsl(249, 99%, 64%) to hsl(278, 94%, 30%) */
+/* - Red (input errors): hsl(0, 100%, 66%) */
+
+/* ### Neutral */
+
+/* - White: hsl(0, 0%, 100%) */
+/* - Light grayish violet: hsl(270, 3%, 87%) */
+/* - Dark grayish violet: hsl(279, 6%, 55%) */
+/* - Very dark violet: hsl(278, 68%, 11%) */
+
+/* ## Typography */
+
+/* ### Body Copy */
+
+/* - Font size: 18px */
+
+/* ************************************* */
+
+/* * END OF COLOR AND TYPLOGRAPHY THEME * */
+
+/* **************************************** */
+
+/* ************************************** */
+
+/* *** Styling strats from here **** */
+
+/* *********************************** */
+
+body {
+  display: flex;
+}
+
+.left-section {
+  background: linear-gradient(
+    to bottom,
+    hsl(249, 99%, 64%),
+    hsl(278, 94%, 30%)
+  );
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+/* stying card-1 */
+
+.card-1 {
+  padding: 5rem 2rem;
+  width: 90%;
+  height: 20rem;
+  background: linear-gradient(
+    to bottom,
+    hsl(278, 94%, 30%),
+    hsl(249, 99%, 64%)
+  );
+  border-radius: 0.5rem;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+}
+
+.circles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+.circle {
+  background-color: #fff;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 10rem;
+}
+
+.circle-2 {
+  width: 2rem;
+  height: 2rem;
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+.card-number {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.card-number .digit {
+  color: #fff;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+}
+
+.user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user .user-name,
+.user .user-date {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* Stying the card - 2 */
+.card-2 {
+  width: 90%;
+  height: 20rem;
+  background: hsl(279, 6%, 55%);
+  border-radius: 0.5rem;
+  margin-top: 10rem;
+}
+
+.card-divider {
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: #000;
+}
+
+.cv-number {
+  padding: 2rem;
+  background-color: grey;
+  width: 90%;
+  margin: 2rem auto;
+  border-radius: 0.3rem;
+  text-align: right;
+}
+
+.cv-number p {
+  color: #fff;
+  font-size: 1.5rem;
+  letter-spacing: 0.4rem;
+}
+
+/* ************************************** */
+
+/* ******** End of left section ******** */
+
+/* ************************************** */
+
+/* ****** Filling out card details **** */
+
+.right-section {
+  background: antiquewhite;
+  flex-basis: 70%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-section form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+form label {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  display: block;
+}
+
+.user-card-details {
+  display: flex;
+  justify-content: start;
+  gap: 3rem;
+}
+
+form input {
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.confirm {
+  background-color: hsl(278, 68%, 11%);
+  color: antiquewhite;
+  width: 50%;
+  border: none;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.confirm:hover {
+  background-color: antiquewhite;
+  color: hsl(278, 68%, 11%);
+  border: 1px solid hsl(278, 68%, 11%);
+}
