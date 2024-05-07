@@ -113,14 +113,9 @@ body {
 
 .card-number {
   margin-top: 8rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: center;
-  gap: 1.5rem;
 }
 
-.card-number .digit {
+.card-number #digit {
   color: #fff;
   font-size: 1.5rem;
   letter-spacing: 0.2rem;
@@ -228,4 +223,18 @@ form input {
   background-color: antiquewhite;
   color: hsl(278, 68%, 11%);
   border: 1px solid hsl(278, 68%, 11%);
+}
+
+/* ******************************* */
+
+/* Form Vaidation Class */
+.invalid {
+  border: 1px solid darkred;
+}
+
+/* ****************************** */
+
+/* Form Validation class */
+.valid {
+  border: 1px solid green;
 }
