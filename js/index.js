@@ -23,6 +23,15 @@ function format(s) {
   return s.toString().replace(/\d{4}(?=.)/g, "$& ");
 }
 
+// format card function
+const formatCard = function () {
+  userName.textContent = `JANE APPLESEED`;
+  userCardNumber.textContent = `0000 0000 0000`;
+  cardMonth.textContent = `00`;
+  cardYear.textContent = `00`;
+  cardCvc.textContent = `123`;
+};
+
 console.log(format(1234567890123456));
 
 // Adding event to the user name element.
@@ -72,10 +81,12 @@ inputCvc.addEventListener(`keyup`, (e) => {
 });
 
 // ********************************
-
 // event when form submittion happens
 
 formEL.addEventListener("submit", (e) => {
-  e.preventDefault();
   alert(`Your form has been submitted!`);
+  e.preventDefault();
+  formatCard();
+  document.querySelector(`.card-details`).classList.add(`hidden`);
+  document.querySelector(`.sucessful-message`).classList.remove(`hidden`);
 });

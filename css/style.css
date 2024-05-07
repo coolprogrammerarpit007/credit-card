@@ -238,3 +238,51 @@ form input {
 .valid {
   border: 1px solid green;
 }
+
+.hidden {
+  display: none;
+}
+
+/* ***************************** */
+
+/* Styling sucess message container */
+/* ****************************** */
+
+.welcome-msg p {
+  text-transform: uppercase;
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  font-size: 3rem;
+}
+
+.sucessful-message button {
+  padding: 1rem 5rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  background-color: hsl(278, 68%, 11%);
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  transition: all 0.7s;
+}
+
+.sucessful-message button:hover {
+  color: hsl(278, 68%, 11%);
+  background-color: antiquewhite;
+  border: 1px solid hsl(278, 68%, 11%);
+}
+.welcome-msg {
+  margin-top: 2rem;
+}
+.card-msg {
+  color: hsl(279, 6%, 55%);
+  font-size: 2rem;
+  text-transform: capitalize;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.checkmark-img {
+  margin-bottom: 2rem;
+}
