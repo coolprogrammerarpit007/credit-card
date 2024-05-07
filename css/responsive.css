@@ -1,0 +1,24 @@
+/* ***** Making Responsive Design ******* */
+
+@media (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-section {
+    width: 100%;
+  }
+  .right-section {
+    width: 100%;
+  }
+
+  form input {
+    width: 100%;
+  }
+
+  .user-card-details {
+    display: flex;
+    flex-direction: column;
+  }
+}

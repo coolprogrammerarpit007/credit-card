@@ -50,6 +50,9 @@ body {
 
 /* *********************************** */
 
+/* import responsive css file */
+@import "responsive.css";
+
 body {
   display: flex;
 }
